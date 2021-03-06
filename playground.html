@@ -4,36 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Description" content="Uma breve aplicação das ferramentas HTML5 e CSS3">
+
     <link rel="stylesheet" href="style.css">
-    <title>Landing Page</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+    </style>
+
+    <title id="landing">Landing Page</title>
+
 </head>
 <body>
     <br>
-    <div>
+    <div class="cabecalho">
         <h1>My First Start Up</h1>
         <h2>A catch phrase because everyone reads this line</h2>
     </div>
 
-    <div>
-        <ul>
-            <a>link_1</a>
-            <a>link_2</a>
-            <alink rel="stylesheet" href="link_3">link_3</a>
-        </ul>
-    </div>
-
-
     <br>
 
     <div id="banner">
-    <h1><strong>Landing Page</strong></h1>
-        <div>
-            <h2>Uma simples pagina degustação Start Up Front-End.</h2>
-            <p>
-                <a href="#">Enroll!</a>
-            </p>
-        </div>
+        <h1><strong>Landing Page</strong></h1>
+            <div>
+                <h2>Uma simples pagina degustação Start Up</h2>
+                <p>
+                    <a href="#">Enroll!</a>
+                </p>
+            </div>
     </div>
+
+    <br>
 
     <div class="cards">
         <img src="images/briefcase.png" alt="picture description" width="100">
@@ -72,12 +73,20 @@
     <div class="family">
         <img src="carrossel-teste/1_f.jpeg" alt="picture description" height="300">
     
-
+        <p id="texto">Testo</p>
     </div>
 
-    <div id="footer">
-        <footer>Wilker Weiler - Full Stack - Developer</footer>
-    </div>
+    <footer class="footer">
+        <div id="nome_footer">
+            <p>Wilker Weiler - Full Stack - Developer</p>
+            <ul id="lista">
+                <li id="ye"><a href="#"><i class="fab fa-github"></i> &nbsp Github</a></li>
+                <li id="vm"><a href="#"><i class="fab fa-instagram"></i> &nbsp Instagram</a></li>
+                <li id="az"><a href="#"><i class="fab fa-facebook-square"></i> &nbsp Facebook</a></li>
+                <li id="tf"><a href="#"><i class="fab fa-twitter-square"></i> &nbsp Twitter</a></li>
+            </ul>
+        </div>
+    </footer>
 
 </body>
 </html>

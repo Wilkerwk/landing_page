@@ -1,25 +1,67 @@
-a {
+
+#landing /* title */
+{
+    font-family: 'Cinzel', serif;
+}
+
+.cabecalho
+{
+    font-family: 'Cinzel', serif;
+    
+}
+
+a:hover
+{
+    font-size: 15px;
     text-decoration: none;
 }
 
-#banner {
-    width: 300px;
-    height: 300px;
-    padding: 15px;
-    border: 5px solid purple;
-    margin: 30px;   
-    box-shadow: 2px 2px 4px silver;
-    border: 2px solid black;
-    margin: auto;
+#banner 
+{
+    text-align: center;
+    background-image: url("https://unsplash.it/1300/600?random");
+    background-size: cover;
+    padding: 150px;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    margin: 0px;
+    margin-left: -8px;
+    margin-right: 0px;
+}
+
+#banner h1 
+{
+    font-family: 'Cinzel', serif;
+    font-size: 50px;
+}
+
+#banner h2 
+{
+    font-family: 'Cinzel', serif;
+    font-family: 50px;
+}
+
+#banner p
+{
+    font-family: 'Cinzel', serif;
+    font-family: 50px;
+}
+
+#banner a 
+{
+    font-family: 'Cinzel', serif;
+    text-shadow: -0.06em 0 0 red, 0.06em 0 0 cyan; 
+}
+
+#cafe
+{
+    font-family: 'Cinzel', serif;
+    text-shadow: -0.06em 0 0 red, 0.06em 0 0 cyan; 
 }
 
 
-
-#footer {
-    border: 3px solid rgb(168, 33, 85);
-}
-
-.family {
+.family 
+{
     width: 300px;
     height: 200px;
     padding: 15px;
@@ -28,4 +70,63 @@ a {
     -moz-box-sizing: content-box;
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
+}
+
+.family #texto
+{
+    color: slateblue;
+    font-size: 30px;
+}
+
+#nome_footer
+{
+    font-family: 'Cinzel', serif;
+    color: lightgrey;
+}
+
+.footer
+{
+    padding: 30px;
+    background: rgb(59, 55, 55);
+    color: lightgrey;
+    margin-left: -8px;
+}
+
+.cards
+{
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    text-shadow: -0.06em 0 0 red, 0.06em 0 0 cyan; 
+}
+
+#lista a
+{
+    color: white;
+    margin: 8px;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+#lista #ye a:hover
+{
+    color: yellow;
+    text-decoration: none;
+}
+
+#lista #vm a:hover
+{
+    color: rgb(156, 84, 66);
+    text-decoration: none;
+}
+
+#lista #az a:hover
+{
+    color: #3b5998;
+    text-decoration: none;
+}
+
+#lista #tf a:hover
+{
+    color: rgb(10, 182, 194);
+    text-decoration: none;
 }
