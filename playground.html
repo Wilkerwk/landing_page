@@ -2,15 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Description" content="Uma breve aplicação das ferramentas HTML5 e CSS3">
-
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
     </style>
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="style.css">
 
     <title id="landing">Landing Page</title>
 
@@ -29,57 +32,111 @@
             <div>
                 <h2>Uma simples pagina degustação Start Up</h2>
                 <p>
-                    <a href="#">Enroll!</a>
+                    <a class="btn btn-primary" href="#">Enroll!</a>
                 </p>
             </div>
     </div>
 
     <br>
 
-    <div class="cards">
-        <img src="images/briefcase.png" alt="picture description" width="100">
-            <h2>Fast</h2>
-            <p>A fast app, <strong>very fast</strong> app</p>
-    </div>
-
-    <div class="cards">
-        <img src="images/diamond.png" alt="picture description" width="100">
-            <h2>Simple</h2>
-            <p>A simple app, <strong>very simple</strong> app</p>
-    </div>
-
-    <div class="cards"> 
-        <img src="images/heart.png" alt="picture description" width="100">
-            <h2>Awesome</h2>
-            <p>An awesome app, <strong>very awesome</strong> app</p>
-    </div>
-
-    <div class="cards">
-        <img src="images/laptop.png" alt="picture description" width="100">
-            <h2>Beautiful</h2>
-            <p>A beautiful app, <strong>very beautiful</strong> app</p>
-    </div>
-
-    <div class="cards">
-        <img src="images/cafe.png" alt="Descrição" width="100">
-            <div id="cafe">
-                <h2>Café com leitura!
-                    <a href="#">Botão ainda em construção!</a>
-                </h2>
-                <p>Descrição em construção!</p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-2 col-xl-12 col-xs-12 col-sm-6 col-md-3">
+                <div class="cards" style="width: s18rem;">
+                    <img class="card-img-top" src="images/fast.jpg" alt="picture description">
+                        <div class="card-body">
+                            <h2 class="card-title">Fast</h2>
+                            <p class="card-text">A fast app, <strong>very fast</strong> app</p>
+                            <a href="#" class="btn btn-primary">Visitar</a>
+                        </div>
+                </div>
             </div>
-    </div>
 
-    <div class="family">
-        <img src="carrossel-teste/1_f.jpeg" alt="picture description" height="300">
-    
-        <p id="texto">Testo</p>
+            <div class="col-lg-2  col-xl-12 col-xs-12 col-sm-6 col-md-3">
+                <div class="cards" style="width: s18rem;">
+                    <img class="card-img-top" src="images/simple.jpg" alt="picture description">
+                        <div class="card-body">
+                            <h2 class="card-title">Simple</h2>
+                            <p class="card-text">A simple app, <strong>very simple</strong> app</p>
+                            <a href="#" class="btn btn-primary">Visitar</a>
+                        </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2  col-xl-12 col-xs-12 col-sm-6 col-md-3">
+                <div class="cards" style="width: s18rem;"> 
+                    <img class="card-img-top" src="images/awesome.jpg" alt="picture description">
+                        <div class="card-body">
+                            <h2 class="card-title"> Awesome</h2>
+                            <p class="card-text">An awesome app, <strong>very awesome</strong> app</p>
+                            <a href="#" class="btn btn-primary">Visitar</a>
+                        </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2  col-xl-12 col-xs-12 col-sm-6 col-md-3">
+                <div class="cards" style="width: s18rem;">
+                    <img class="card-img-top" src="images/beautful.jpg" alt="picture description">
+                        <div class="card-body">
+                            <h2 class="card-title">Beautiful</h2>
+                            <p class="card-text">A beautiful app, <strong>very beautiful</strong> app</p>
+                            <a href="#" class="btn btn-primary">Visitar</a>
+                        </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-xl-12 col-xs-12 col-sm-6 col-md-3">
+                <div class="cards" style="width: s18rem;">
+                    <img class="card-img-top" src="images/elegant.jpg" alt="picture description">
+                        <div class="card-body">
+                            <h2 class="card-title">Elegant</h2>
+                            <p class="card-text">Elegance and subtlety in curves and animations.</p>
+                            <a href="#" class="btn btn-primary">Visitar</a>
+                        </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-xl-12 col-xs-12 col-sm-6 col-md-3">
+                <div class="cards" style="width: s18rem;">
+                    <img class="card-img-top" src="images/elegant.jpg" alt="picture description">
+                        <div class="card-body">
+                            <h2 class="card-title">Elegant</h2>
+                            <p class="card-text">Elegance and subtlety in curves and animations.</p>
+                            <a href="#" class="btn btn-primary">Visitar</a>
+                        </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-2 col-xl-12 col-xs-12 col-sm-6 col-md-3">
+                <div class="cards" style="width: s18rem;">
+                    <img class="card-img-top" src="images/elegant.jpg" alt="picture description">
+                        <div class="card-body">
+                            <h2 class="card-title">Elegant</h2>
+                            <p class="card-text">Elegance and subtlety in curves and animations.</p>
+                            <a href="#" class="btn btn-primary">Visitar</a>
+                        </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-xl-12 col-xs-12 col-sm-6 col-md-3">
+                <div class="cards" style="width: s18rem;">
+                    <img class="card-img-top" src="images/elegant.jpg" alt="picture description">
+                        <div class="card-body">
+                            <h2 class="card-title">Elegant</h2>
+                            <p class="card-text">Elegance and subtlety in curves and animations.</p>
+                            <a href="#" class="btn btn-primary">Visitar</a>
+                        </div>
+                </div>
+            </div>
+
+        </div>
     </div>
 
     <footer class="footer">
         <div id="nome_footer">
             <p>Wilker Weiler - Full Stack - Developer</p>
-            <ul id="lista">
+            <ul class="list-inline">
                 <li id="ye"><a href="#"><i class="fab fa-github"></i> &nbsp Github</a></li>
                 <li id="vm"><a href="#"><i class="fab fa-instagram"></i> &nbsp Instagram</a></li>
                 <li id="az"><a href="#"><i class="fab fa-facebook-square"></i> &nbsp Facebook</a></li>

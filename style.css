@@ -1,4 +1,10 @@
 
+body
+{
+    background: rgb(230, 230, 230, 0.5);
+    margin: 0;
+}
+
 #landing /* title */
 {
     font-family: 'Cinzel', serif;
@@ -7,19 +13,12 @@
 .cabecalho
 {
     font-family: 'Cinzel', serif;
-    
-}
-
-a:hover
-{
-    font-size: 15px;
-    text-decoration: none;
 }
 
 #banner 
 {
     text-align: center;
-    background-image: url("https://unsplash.it/1300/600?random");
+    background-image: url("images/banner.jpg");
     background-size: cover;
     padding: 150px;
     color: white;
@@ -38,95 +37,178 @@ a:hover
 #banner h2 
 {
     font-family: 'Cinzel', serif;
-    font-family: 50px;
+    font-size: 50px;
 }
 
 #banner p
 {
     font-family: 'Cinzel', serif;
-    font-family: 50px;
+    font-size: 40px;
 }
 
 #banner a 
 {
     font-family: 'Cinzel', serif;
-    text-shadow: -0.06em 0 0 red, 0.06em 0 0 cyan; 
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
 }
 
-#cafe
+#banner a:hover
+{
+    color: #b6b0ae;
+    text-decoration: none;
+    text-shadow: 1px 1px 5px black;
+}
+
+.container
+{
+    margin: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.cards
+{
+    border: 2px solid rgb(40, 41, 43);
+    margin-left: 8px;
+    margin-right: 8px;
+    width: 270px;
+    border-radius: 6%;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    background-color: rgb(236, 230, 236);
+    box-shadow: 5px 5px 5px 6px rgba(0, 0, 0, 0.5);
+    /* -moz-box-shadow:    3px 3px 0px 5px #918f8f;
+    -webkit-box-shadow: 3px 3px 0px 5px #918f8f; */
+}
+
+.cards .card-img-top
+{
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    left: 0;
+    right: 0;
+    top: 0;
+    object-fit: cover;
+    bottom: 0;
+    width: 100%;
+    height: 180px;
+}
+
+.cards .card-body
 {
     font-family: 'Cinzel', serif;
-    text-shadow: -0.06em 0 0 red, 0.06em 0 0 cyan; 
+    padding-bottom: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 8px;
+    width: 100%;
+    height: 180px;
 }
 
-
-.family 
-{
-    width: 300px;
-    height: 200px;
-    padding: 15px;
-    border: 5px solid purple;
-    margin: 30px;
-    -moz-box-sizing: content-box;
-    -webkit-box-sizing: content-box;
-    box-sizing: content-box;
-}
-
-.family #texto
-{
-    color: slateblue;
-    font-size: 30px;
-}
 
 #nome_footer
 {
     font-family: 'Cinzel', serif;
-    color: lightgrey;
+    color: lightslategrey;
+    font-size: 20px;
 }
 
 .footer
 {
     padding: 30px;
-    background: rgb(59, 55, 55);
-    color: lightgrey;
+    background: #332716;
     margin-left: -8px;
 }
 
-.cards
+@keyframes color_footer
 {
-    text-align: center;
-    font-family: 'Cinzel', serif;
-    text-shadow: -0.06em 0 0 red, 0.06em 0 0 cyan; 
+    0%
+    {
+        background-position: 0% 30%;
+    }
+    30%
+    {
+        background-position: 50% 30%;
+    }
+    50%
+    {
+        background-position: 5% 30%;
+    }
+    75%
+    {
+        background-position: 100% 75%;
+    }
+    100%
+    {
+        background-position: 0% 100%;
+    }
 }
 
-#lista a
+.list-inline a
 {
-    color: white;
+    color: lightslategrey;
     margin: 8px;
     font-size: 15px;
     text-decoration: none;
+
 }
 
-#lista #ye a:hover
+.list-inline li
 {
-    color: yellow;
+    color: lightslategrey;
+    font-size: 15px;
+}
+
+.list-inline #ye a:hover
+{
+    color: rgb(104, 172, 206);
     text-decoration: none;
 }
 
-#lista #vm a:hover
+.list-inline #vm a:hover
 {
-    color: rgb(156, 84, 66);
+    color: #f77737;
     text-decoration: none;
 }
 
-#lista #az a:hover
+.list-inline #az a:hover
 {
     color: #3b5998;
     text-decoration: none;
 }
 
-#lista #tf a:hover
+.list-inline #tf a:hover
 {
-    color: rgb(10, 182, 194);
+    color: #1da1f2;
+    text-decoration: none;
+}
+
+.list-inline #ye:hover 
+{
+    color: rgb(104, 172, 206);
+    text-decoration: none;
+}
+
+.list-inline #vm:hover 
+{
+    color: #f77737;
+    text-decoration: none;
+}
+
+.list-inline #az:hover 
+{
+    color: #3b5998;
+    text-decoration: none;
+}
+
+.list-inline #tf:hover 
+{
+    color: #1da1f2;
     text-decoration: none;
 }
