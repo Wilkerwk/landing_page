@@ -6,26 +6,21 @@
     <meta name="Description" content="Uma breve aplicação das ferramentas HTML5 e CSS3">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
-    </style>
-    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="style.css">
-
+    
     <title id="landing">Landing Page</title>
 
 </head>
 <body>
-    <br>
+    <!-- <br>
     <div class="cabecalho">
         <h1>My First Start Up</h1>
         <h2>A catch phrase because everyone reads this line</h2>
     </div>
-
-    <br>
+    -->
 
     <div id="banner">
         <h1><strong>Landing Page</strong></h1>
@@ -37,24 +32,31 @@
             </div>
     </div>
 
-    <br>
-
-    <div class="container-fluid">
+    <div class="container-fluid pt-3">
         <div class="row">
-            <div class="col-lg-2 col-xl-12 col-xs-12 col-sm-6 col-md-3">
-                <div class="cards" style="width: s18rem;">
-                    <img class="card-img-top" src="images/fast.jpg" alt="picture description">
-                        <div class="card-body">
-                            <h2 class="card-title">Fast</h2>
-                            <p class="card-text">A fast app, <strong>very fast</strong> app</p>
-                            <a href="#" class="btn btn-primary">Visitar</a>
+            <!-- Feature: rotação 3D com mouse "hover" e botão api-->
+            <div class="box-cards col-xxl-2 col-lg-3 col-xs-12 col-sm-6 col-md-3">
+                <div class="flip-cards">
+                    <div class="flip-cards-front text-center" style="background-image: url(images/clock1.jpg);">
+                        <div class="inner color-white">
+                            <h3 class="flip-cards-header">Custom 3D Flip Vertical</h3>
+                            <p class="text-inner-cards">A short describing this.</p>
+                            <i class="fas arrow fa-arrow-alt-circle-right"></i>
                         </div>
+                    </div>
+                    <div class="flip-cards-back text-center" style="background-image: url(images/clock1.jpg);">
+                        <div class="inner color-white">
+                            <h3 class="flip-cards-header">Custom 3D Flip Vertical</h3>
+                            <p class="text-inner-cards">A short describing this.</p>
+                            <button class="btn btn-primary">Learn More</button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="col-lg-2  col-xl-12 col-xs-12 col-sm-6 col-md-3">
+            <div class="box-cards col-xxl-2 col-lg-3 col-xs-12 col-sm-6 col-md-3">
                 <div class="cards" style="width: s18rem;">
-                    <img class="card-img-top" src="images/simple.jpg" alt="picture description">
+                    <img class="card-img-top" src="images/simple.jpg" loading="auto" alt="picture description">
                         <div class="card-body">
                             <h2 class="card-title">Simple</h2>
                             <p class="card-text">A simple app, <strong>very simple</strong> app</p>
@@ -62,10 +64,9 @@
                         </div>
                 </div>
             </div>
-
-            <div class="col-lg-2  col-xl-12 col-xs-12 col-sm-6 col-md-3">
+            <div class="box-cards col-xxl-2 col-lg-3 col-xs-12 col-sm-6 col-md-3">
                 <div class="cards" style="width: s18rem;"> 
-                    <img class="card-img-top" src="images/awesome.jpg" alt="picture description">
+                    <img class="card-img-top" src="images/awesome.jpg" loading="auto" alt="picture description">
                         <div class="card-body">
                             <h2 class="card-title"> Awesome</h2>
                             <p class="card-text">An awesome app, <strong>very awesome</strong> app</p>
@@ -74,9 +75,9 @@
                 </div>
             </div>
 
-            <div class="col-lg-2  col-xl-12 col-xs-12 col-sm-6 col-md-3">
+            <div class="box-cards col-xxl-2 col-lg-3 col-xs-12 col-sm-6 col-md-3">
                 <div class="cards" style="width: s18rem;">
-                    <img class="card-img-top" src="images/beautful.jpg" alt="picture description">
+                    <img class="card-img-top" src="images/beautful.jpg" loading="auto" alt="picture description">
                         <div class="card-body">
                             <h2 class="card-title">Beautiful</h2>
                             <p class="card-text">A beautiful app, <strong>very beautiful</strong> app</p>
@@ -85,9 +86,9 @@
                 </div>
             </div>
 
-            <div class="col-lg-2 col-xl-12 col-xs-12 col-sm-6 col-md-3">
+            <div class="box-cards col-xxl-2 col-lg-3 col-xs-12 col-sm-6 col-md-3">
                 <div class="cards" style="width: s18rem;">
-                    <img class="card-img-top" src="images/elegant.jpg" alt="picture description">
+                    <img class="card-img-top" src="images/elegant.jpg" loading="auto" alt="picture description">
                         <div class="card-body">
                             <h2 class="card-title">Elegant</h2>
                             <p class="card-text">Elegance and subtlety in curves and animations.</p>
@@ -96,42 +97,55 @@
                 </div>
             </div>
 
-            <div class="col-lg-2 col-xl-12 col-xs-12 col-sm-6 col-md-3">
+            <div class="box-cards col-xxl-2 col-lg-3 col-xs-12 col-sm-6 col-md-3">
                 <div class="cards" style="width: s18rem;">
-                    <img class="card-img-top" src="images/elegant.jpg" alt="picture description">
+                    <img class="card-img-top" src="images/responsive.jpg" loading="auto" alt="picture description">
                         <div class="card-body">
-                            <h2 class="card-title">Elegant</h2>
-                            <p class="card-text">Elegance and subtlety in curves and animations.</p>
+                            <h2 class="card-title">Responsive</h2>
+                            <p class="card-text">Responsive application, fits in various screen formats.</p>
                             <a href="#" class="btn btn-primary">Visitar</a>
                         </div>
                 </div>
             </div>
 
 
-            <div class="col-lg-2 col-xl-12 col-xs-12 col-sm-6 col-md-3">
+            <div class="box-cards col-xxl-2 col-lg-3 col-xs-12 col-sm-6 col-md-3">
                 <div class="cards" style="width: s18rem;">
-                    <img class="card-img-top" src="images/elegant.jpg" alt="picture description">
+                    <img class="card-img-top" src="images/dynamics.jpg" loading="auto" alt="picture description">
                         <div class="card-body">
-                            <h2 class="card-title">Elegant</h2>
-                            <p class="card-text">Elegance and subtlety in curves and animations.</p>
+                            <h2 class="card-title">Dynamics</h2>
+                            <p class="card-text">Dinamico app, com interação entre faetures.</p>
                             <a href="#" class="btn btn-primary">Visitar</a>
                         </div>
                 </div>
             </div>
 
-            <div class="col-lg-2 col-xl-12 col-xs-12 col-sm-6 col-md-3">
+            <div class="box-cards col-xxl-2 col-lg-3 col-xs-12 col-sm-6 col-md-3">
                 <div class="cards" style="width: s18rem;">
-                    <img class="card-img-top" src="images/elegant.jpg" alt="picture description">
+                    <img class="card-img-top" src="images/corrent.jpg" loading="auto" alt="picture description">
                         <div class="card-body">
-                            <h2 class="card-title">Elegant</h2>
-                            <p class="card-text">Elegance and subtlety in curves and animations.</p>
+                            <h2 class="card-title">Current</h2>
+                            <p class="card-text">Current app, updated techniques.</p>
                             <a href="#" class="btn btn-primary">Visitar</a>
                         </div>
                 </div>
             </div>
 
-        </div>
+        </div> 
     </div>
+
+    <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>John Doe</h1>
+            <p>Architect & Engineer</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
 
     <footer class="footer">
         <div id="nome_footer">

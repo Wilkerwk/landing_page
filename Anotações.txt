@@ -1,0 +1,21 @@
+<img class="card-img-top" src="images/fast.jpg" loading="auto" alt="picture description">
+                                    <div class="card-body">
+                                        <h2 class="card-title">Fast</h2>
+                                        <p class="card-text">A fast app, <strong>very fast</strong> app</p>
+                                        <a href="#" class="btn btn-primary">Visitar</a>
+                                    </div>
+
+                                                    <div class="cont">
+                <div class="cards">
+                    <div class="face face2">
+                        <div class="content">
+                            <img class="card-img-top" src="images/fast.jpg" loading="auto" alt="picture description">
+                                <div class="card-body">
+                                    <h2 class="card-title">Fast</h2>
+                                    <p class="card-text">A fast app, <strong>very fast</strong> app</p>
+                                    <a href="#" class="btn btn-primary">Visitar</a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
